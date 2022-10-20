@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>rocks d xebecs</title>
+</head>
+<body>
+  
+  <div class="div">
+  <button onclick="fun()" id="button1">
+    <img class="rock" src="cob.png" alt="rock">
+  </button>
+  <button onclick="fun2()" id="button2">
+    <img class="paper" src="paper.png" alt="paper">
+  </button>
+  <button onclick="fun3()" id="button3">
+    <img class="scissors" src="shears.png" alt="scissors">
+  </button>
+  </div>
+  
+  
+  <script>
+  function fun() {
+  
+
+ var ran = Math.floor(1+ Math.random() * 3);
+
+ if ( ran == 1) {
+   window.alert("you win rock > scissors")
+ }
+ if ( ran == 2) {
+   window.alert("you lose  rock < paper")
+ }
+ if ( ran == 3) {
+   window.alert("you equal rock = rock")
+ }
+
+ 
+}
+  function fun2() {
+  
+
+ var ran = Math.floor(1+ Math.random() * 3);
+ 
+ if ( ran == 1) {
+   window.alert("you win paper > rock")
+ }
+ if ( ran == 2) {
+   window.alert("you lose  paper < scissors")
+ }
+ if ( ran == 3) {
+   window.alert(" try again paper = paer")
+ }
+
+ 
+}
+  function fun3() {
+  
+
+ var ran = Math.floor(1+ Math.random() * 3);
+ 
+ if ( ran == 1) {
+   window.alert("you win scissors > paper")
+ }
+ if ( ran == 2) {
+   window.alert("you lose  scissors < rock")
+ }
+ if ( ran == 3) {
+   window.alert(" try again scissors = scissors")
+ }
+
+ 
+}
+  </script>
+</body>
+</html>
